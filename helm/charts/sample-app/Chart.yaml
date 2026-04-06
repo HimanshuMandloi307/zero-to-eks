@@ -1,0 +1,4 @@
+apiVersion: v2
+name: sample-app
+description: A sample app for zero-to-eks portfolio
+version: 0.1.0
