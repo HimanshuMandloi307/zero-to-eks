@@ -1,4 +1,12 @@
 terraform {
+  backend "s3" {
+    bucket         = "zero-to-eks-tfstate-021891577047"
+    key            = "dev/terraform.tfstate"
+    region         = "ap-south-1"
+    dynamodb_table = "zero-to-eks-tfstate-lock"
+    encrypt        = true
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
