@@ -18,6 +18,11 @@ variable "cluster_name" {
   default = "zero-to-eks"
 }
 
+variable "cluster_version" {
+  type    = string
+  default = "1.29"
+}
+
 variable "azs" {
   type    = list(string)
   default = ["ap-south-1a", "ap-south-1b"]
